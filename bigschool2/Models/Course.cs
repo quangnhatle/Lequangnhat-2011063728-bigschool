@@ -16,10 +16,11 @@ namespace bigschool2.Models
         public string LecturerId { get; set; }
         [Required]
         [StringLength(255)]
+        public Category Category { get; set; }
         public string Place { get; set; }
         public DateTime DateTime { get; set; }
         [Required]
-        public Category CategoryId { get; set; }
+        public byte CategoryId { get; set; }
     }
 
 }
